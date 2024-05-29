@@ -1,0 +1,5 @@
+venv/
+# Arquivos grandes gerados pelo Power BI
+emprestimos_completo_limpo.csv
+power_bi
+power_bi\power_bi.pbix

@@ -1,81 +1,61 @@
-# Análise de Empréstimos em Biblioteca
+**Análise de Empréstimos em Biblioteca 📚**
 
-Este projeto faz parte do desafio #7DaysOfCode com Python Pandas.
+Este projeto visa analisar os padrões de empréstimos em uma biblioteca, utilizando técnicas de ciência de dados para identificar tendências, padrões de comportamento dos usuários, e propor melhorias no processo de empréstimos.
 
-## Descrição
+**Visão Geral**
 
-Este projeto visa analisar os dados de empréstimos em uma biblioteca ao longo do tempo. Os dados incluem informações sobre os empréstimos realizados, exemplares emprestados, datas e horas dos empréstimos.
+Analisar o histórico de empréstimos em uma biblioteca pode fornecer insights valiosos sobre o comportamento dos usuários, os livros mais populares, e ajudar a melhorar a gestão da coleção. Este projeto aplica técnicas de análise de dados para explorar e visualizar esses padrões.
 
-## Arquivos do Projeto
+**Tecnologias Utilizadas**
 
-- **dados_emprestimos**: Pasta contendo arquivos CSV com dados de empréstimos separados por ano.
+Python: Linguagem principal utilizada para análise de dados.
 
-- **dados_exemplares.parquet**: Arquivo Parquet contendo informações sobre os exemplares da biblioteca.
+Pandas: Manipulação e análise de dados.
 
-- **app.py**: Script Python responsável pela importação e organização inicial dos dados.
+Matplotlib e Seaborn: Visualização de dados.
 
-- **analise_emprestimos.py**: Script Python para realizar a análise dos empréstimos.
+Jupyter Notebook: Ambiente de desenvolvimento para explorar e documentar a análise.
 
-- **emprestimos_completo_limpo.csv**: Arquivo CSV contendo os dados limpos após a primeira parte da análise.
+**Estrutura do Projeto**
 
-## Dependências
+data/: Contém os arquivos de dados usados na análise.
 
-- pandas: `pip install pandas`
-- matplotlib: `pip install matplotlib`
+notebooks/: Jupyter Notebooks com o processo de análise.
 
-## Execução
+output/: Resultados gerados pela análise, como gráficos e relatórios.
 
-Para executar a análise dos empréstimos, siga estes passos:
+scripts/: Scripts Python utilizados para processamento de dados.
 
-1. Certifique-se de ter as dependências instaladas.
+README.md: Este arquivo com a documentação do projeto.
 
-2. Execute o script `app.py` para importar e organizar os dados.
+**Como Executar**
 
-3. Em seguida, execute o script `analise_emprestimos.py` para realizar a análise dos empréstimos.
+git clone https://github.com/CaioSergio93/Analise-de-Emprestimos-em-Biblioteca.git
 
----
+Navegue até o diretório do projeto:
 
-# Análise de Empréstimos em Bibliotecas Universitárias
+cd Analise-de-Emprestimos-em-Biblioteca
 
-Neste repositório, você encontrará uma série de scripts desenvolvidos para analisar os padrões de empréstimos de livros em bibliotecas universitárias ao longo do tempo. A análise é realizada com base em dados coletados entre os anos de 2010 e 2022.
+Instale as dependências necessárias:
 
-## Introdução ao Boxplot
+pip install -r requirements.txt
 
-Hoje vamos discutir sobre o Boxplot, uma visualização poderosa que permite visualizar medidas estatísticas como a mediana, os quartis, os valores mínimos e máximos, e os valores atípicos (outliers). Este gráfico foi criado pelo matemático John Tukey na década de 70, no seu livro “Exploratory Data Analysis”.
+Execute os notebooks para reproduzir as análises:
 
-O gráfico possui uma estrutura formada por uma caixa retangular, uma linha cortando essa caixa e as hastes (ou bigodes) ligadas à caixa. Os quartis são representados pelos limites da caixa, do quartil inferior (Q1) ao quartil superior (Q3). A mediana (Q2) é representada pela linha. Os valores mínimos e máximos são as extremidades das hastes e os outliers são todos os pontos além destes limites.
+jupyter notebook notebooks/analise_emprestimos.ipynb
 
-## Desafio do Dia
+**Exemplos de Análise
+**
+Distribuição dos Empréstimos ao Longo do Tempo: Visualiza como os empréstimos variam ao longo dos meses e anos.
 
-Hoje, você irá praticar algumas visualizações para entender melhor os dados e desenvolver uma análise sobre o problema dos empréstimos nas bibliotecas universitárias. Você vai:
+Livros Mais Emprestados: Identifica os títulos com maior número de empréstimos.
 
-- Identificar a coleção com maior frequência de empréstimos para cada tipo de usuário (graduação e pós-graduação).
+Análise de Usuários: Segmenta usuários por frequência de empréstimos e interesses.
 
-- Plotar um gráfico de boxplot para cada ano e analisar as mudanças ao longo do tempo.
+**Contribuição**
 
-- Avaliar as diferenças nos empréstimos entre os alunos de graduação e pós-graduação e identificar anos específicos que se destacam.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, sugerir melhorias ou enviar pull requests.
 
-- Realizar análises comparativas entre diferentes anos para entender as tendências nos empréstimos.
+**Licença**
 
-Além disso, você vai realizar uma análise detalhada dos empréstimos realizados pelos cursos de graduação entre 2015 e 2020, e calcular a quantidade de empréstimos por ano para cada curso.
-
-Por fim, você irá comparar a diferença percentual nos empréstimos entre os anos de 2017-2018, 2018-2019 e 2019-2022, destacando as mudanças ao longo do tempo.
-
-## Estrutura do Projeto
-
-- `analise_emprestimos_pos_graduacao.py`: Script principal que contém as análises e visualizações dos empréstimos.
-
-- `data/`: Pasta contendo os dados de empréstimos em diferentes formatos (CSV, Excel, JSON).
-
-- `resultados/`: Pasta onde são salvos os resultados das análises (gráficos, tabelas).
-
-## Como Executar
-
-Para executar o script principal, basta rodar o comando `python analise_emprestimos_pos_graduacao.py` no terminal.
-
-## Bibliotecas Utilizadas
-
-- Pandas
-- Matplotlib
-- Seaborn
-
+Este projeto é licenciado sob os termos da licença MIT. Veja o arquivo LICENSE para mais detalhes.

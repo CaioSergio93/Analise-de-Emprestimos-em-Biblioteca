@@ -44,8 +44,8 @@ Execute os notebooks para reproduzir as análises:
 
 jupyter notebook notebooks/analise_emprestimos.ipynb
 
-**Exemplos de Análise
-**
+**Exemplos de Análise**
+
 Distribuição dos Empréstimos ao Longo do Tempo: Visualiza como os empréstimos variam ao longo dos meses e anos.
 
 Livros Mais Emprestados: Identifica os títulos com maior número de empréstimos.
